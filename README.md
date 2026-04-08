@@ -14,7 +14,20 @@ A lightweight macOS menu bar app that generates a dynamic GitHub-style dot calen
 - Launch at Login support
 - No dependencies — pure Swift, ~288KB binary
 
-## Screenshot
+## Screenshots
+
+### Wallpaper Preview
+![Wallpaper Settings](Resources/Screenshots/WallpaperPreview.png)
+
+### Light & Dark Mode
+| Light | Dark |
+|-------|------|
+| ![Light Mode](Resources/Screenshots/WallpaperLight.png) | ![Dark Mode](Resources/Screenshots/WallpaperDark.png) |
+
+### Menu Bar & Settings
+| Menu Bar | Settings |
+|----------|----------|
+| ![Menu Bar](Resources/Screenshots/MenuBarSetting.png) | ![Settings](Resources/Screenshots/SettingView.png) |
 
 The wallpaper shows your macOS username and year progress percentage below the dot grid.
 
@@ -31,7 +44,7 @@ The wallpaper shows your macOS username and year progress percentage below the d
 Requires Xcode Command Line Tools (macOS 14+, Apple Silicon).
 
 ```bash
-git clone https://github.com/yourusername/DotCalendar.git
+git clone https://github.com/wibawasuyadnya/DotCalendar.git
 cd DotCalendar
 chmod +x build.sh
 ./build.sh
