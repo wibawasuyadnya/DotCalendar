@@ -30,7 +30,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
         if dominated.count > 1 {
             // Notify existing instance to show settings
             DistributedNotificationCenter.default().postNotificationName(
-                .init("com.aguswibawa.dotcalendar.showSettings"),
+                .init("\(Bundle.main.bundleIdentifier!).showSettings"),
                 object: nil
             )
             // Quit this duplicate
@@ -42,7 +42,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
         DistributedNotificationCenter.default().addObserver(
             self,
             selector: #selector(handleShowSettings),
-            name: .init("com.aguswibawa.dotcalendar.showSettings"),
+            name: .init("\(Bundle.main.bundleIdentifier!).showSettings"),
             object: nil
         )
 

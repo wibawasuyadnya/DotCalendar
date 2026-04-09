@@ -4,7 +4,7 @@ import ImageIO
 import os
 import ServiceManagement
 
-private let log = Logger(subsystem: "com.aguswibawa.dotcalendar", category: "engine")
+private let log = Logger(subsystem: Bundle.main.bundleIdentifier ?? "app.dotcalendar", category: "engine")
 
 // MARK: - WallpaperEngine
 
